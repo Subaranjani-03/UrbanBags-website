@@ -30,6 +30,10 @@
   .collection-types .types {
     text-align: center;
   }
+  .collection-types .types img{
+    height: 50%;
+  width: 80%;
+  }
 
   /* ----------product---------- */
   .product-page .products-grid{
@@ -133,6 +137,10 @@
     height: 250px;
     gap: 10px;
   }
+  .collection-types .types img{
+    height: 70%;
+  width: 90%;
+  }
 
  /* ----------product---------- */
   .product-page .products-grid{
@@ -198,7 +206,7 @@
     gap: 10px;
   }
   .contact-us form .upper-box input {
-    width: 255px;
+    width: 240px;
   }
 
   /* ------footer------ */

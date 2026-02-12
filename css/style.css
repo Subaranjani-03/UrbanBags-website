@@ -272,15 +272,16 @@ header .navigation .nav {
 .collection-types .types img {
   height: 70%;
   width: 100%;
-  transition: 0.8s;
+  transition: 0.5s;
   border-radius: 50%;
   padding: 10px;
+  background-color: #c29976;
 }
 .collection-types .types img:hover {
+  /* background: none; */
   transform: scale(1.1);
-  background-color: #c29976;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-  /* background-color: #f3c5ac; */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: #f4b400; */
 }
 .collection-types .types .type-title {
   font-size: 1rem;
@@ -298,8 +299,9 @@ header .navigation .nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  background-color: rgb(194, 153, 118, 0.8);
+  gap: 40px;
+  position: relative;
+  /* background-color: rgb(194, 153, 118, 0.8); */
 }
 .product-page .section-title {
   font-size: 1.8rem;
@@ -311,7 +313,7 @@ header .navigation .nav {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: 40px;
 }
 .product-page .products-grid .product-card {
   height: 400px;
@@ -322,6 +324,8 @@ header .navigation .nav {
   display: flex;
   flex-direction: column;
   transition: 0.5s;
+  font-family: var(--Roboto);
+  border: 1px solid #c29976;
 }
 .product-page .products-grid .product-card:hover {
   transform: translateY(-5px);
@@ -381,23 +385,59 @@ header .navigation .nav {
   font-size: 0.9rem;
   color: #777;
 }
-.product-card .product-price {
+.product-card .price-box{
+  /* border: 1px solid; */
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.product-card .price-box .product-price {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 8px 0;
 }
+.product-card .price-box .product-strike{
+  text-decoration: line-through;
+  font-size: .9rem;
+  color: #777;
+}
 .product-card .add-cart {
   padding: 10px;
   border: none;
-  background: #000;
-  color: #fff;
+  background: #f4b400;
+  color: black;
   border-radius: 2px;
   cursor: pointer;
+  transition: .5s;
 }
 .product-card .add-cart:hover {
   background: black;
   color: #f4b400;
 }
+.product-card .rating {
+  position: absolute;
+  bottom: 60px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  padding: 4px 8px;
+}
+
+.product-card .rating i {
+  color: #f4b400;
+  font-size: 0.9rem;
+}
+
+.product-card .rating .rating-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
 
 /* ----------brands---------- */
 .brands {
